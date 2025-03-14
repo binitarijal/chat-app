@@ -1,0 +1,84 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20232a;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .logo h2 {
+    font-size: 1.8rem;
+    color: #61dafb;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .google-btn {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .google-btn:hover {
+    background-color: #357ae8;
+  }
+  
+  .google-btn:focus {
+    outline: none;
+  }
+  
+  .google-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Sign-out button hidden by default */
+  .sign-out-btn {
+    display: none;
+  }
+  
+  .welcome-message {
+    color: #61dafb;
+    font-weight: bold;
+    display: none;
+  }
+  
+  /* Show the welcome message and sign-out button when logged in */
+  .auth-buttons.logged-in .sign-in-btn {
+    display: none;
+  }
+  
+  .auth-buttons.logged-in .welcome-message {
+    display: inline-block;
+  }
+  
+  .auth-buttons.logged-in .sign-out-btn {
+    display: inline-block;
+  }
+  
